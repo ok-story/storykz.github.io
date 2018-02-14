@@ -87,7 +87,29 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
+  <!--    передача UTM-->
 
+    <script type="text/javascript">
+
+            var param = location.search;
+
+            $(document).ready(function() {
+                $('.priceGeo').each(function() {
+                    $(this).text("всего за 1173 тенге для жителей Казахстана");
+                });
+                $('a').each(function() {
+                    //99 рублей
+
+                    $(this).attr('href', 'http://artr.home-look.ru/cjct/' + param);
+
+
+                });
+            });
+
+
+    </script>
+
+    <!--    передача UTM-->
 
  </head>
 
